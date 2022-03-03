@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "sans-serif";
+}
+.body {
+  overflow-x: hidden;
+}
+
+main {
+  background-image: url("bg.image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.overlay > nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.534);
+  color: white;
+  height: 8vh;
+  box-shadow: rgba(0, 0, 0, 0.425) 0px 4px 12px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.overlay {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.514);
+  width: 100%;
+  height: 100%;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.menu:hover {
+  color: #ed563b;
+}
+
+.nav_container > h1 > span {
+  color: rgb(237 86 59);
+}
+
+.nav_container > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.nav_container > ul > li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.nav_container > ul > li:hover {
+  color: rgb(237 86 59);
+  transform: 0.3s ease;
+}
+.nav_container > ul > li:nth-child(1) {
+  color: #ed563b;
+}
+
+.nav_container > ul > a {
+  color: rgb(237 86 59);
+  border: 2px solid red;
+  background-color: rgb(237 86 59);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.nav_container > ul > a:hover {
+  background-color: red;
+}
+
+.header_section {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header_section > p {
+  letter-spacing: 1px;
+  font-size: 14pt;
+}
+
+.header_section > h1 {
+  font-size: 9vmin;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+
+.header_section > h1 > span {
+  color: #ed563b;
+}
+.btn {
+  background-color: #ed563b;
+  color: aliceblue;
+  font-size: medium;
+  padding: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: red;
+}
+
+.about_section {
+  padding: 4rem 1rem;
+}
+.header_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.header_about > h1 {
+  font-size: poppins sans-serif;
+}
+.header_about > h1 > span {
+  color: #ed563b;
+}
+.header_about > img {
+  margin: 15px 0;
+}
+
+.programs_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.prog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 2rem 1rem;
+}
+.prog_icon {
+  color: white;
+  padding: 1.5rem;
+  background-color: #ed563b;
+  border-radius: 4px;
+  font-size: 36pt;
+  margin-right: 2rem;
+}
+.prog_info > p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: grey;
+}
+.prog_info > a {
+  text-decoration: none;
+  color: #ed563b;
+}
+
+.ad {
+  background-image: url(" https://media.istockphoto.com/photos/muscular-guy-on-cross-training-exercising-with-ropes-picture-id1062696852?k=20&m=1062696852&s=170667a&w=0&h=rJhwfEcSZLcAVlvWBPLPEVxlo8UBydbni1QwzbL0VXI=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.overlay1 > h1 {
+  color: white;
+  text-align: center;
+}
+
+.overlay1 > h1 > span {
+  color: #ed563b;
+}
+.overlay1 > p {
+  text-align: center;
+  color: white;
+  margin: 15px 0;
+  font-size: 8pt;
+}
+
+.overlay1 {
+  background-color: rgba(0, 0, 0, 0.319);
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.btn_ad {
+  background-color: #ed563b;
+  color: aliceblue;
+  padding: 5px;
+  border-style: none;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.container_classess {
+  padding: 4rem 2rem;
+}
+.our_classes {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.our_classes > h2 > span {
+  color: #ed563b;
+}
+
+.our_classes > img {
+  margin: 1rem 0;
+}
+
+.our_classes > p {
+  font-size: 10pt;
+  color: grey;
+}
+
+.holder {
+  display: flex;
+  align-items: flex-start;
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.left_side {
+  margin-right: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.training_days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+}
+.training_days > i {
+  font-size: 25pt;
+  margin-right: 25px;
+  color: #ed563b;
+}
+.trainers_section {
+  padding: 3rem 0;
+}
+.left_side > button {
+  width: 100%;
+  background-color: #ed563b;
+  padding: 1.5rem 1rem;
+  font-size: 18px;
+  color: whitesmoke;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.right_side {
+  max-width: 700px;
+}
+.right_side > img {
+  width: 100%;
+}
+.image_information {
+  max-width: 700px;
+}
+
+.image_information > img {
+  width: 100%;
+  border-radius: 5px;
+}
+.image_information > h1 {
+  margin: 1rem 0;
+}
+
+.image_information > button {
+  background-color: #ed563b;
+  padding: 1rem;
+  font-size: 16px;
+  color: whitesmoke;
+  letter-spacing: 0.5px;
+  margin: 1rem 0;
+  border: none;
+}
+
+.schedule {
+  background-image: url("https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.schedule_container {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 1rem;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: white;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about > img {
+  margin: 1rem;
+}
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.days > p {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.days > p:hover {
+  color: #ee2d0a;
+}
+
+.days_grid {
+  border: 1px solid whitesmoke;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 60%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.grid_item {
+  border: 1px solid whitesmoke;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.trainers_info {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+.trainers_info > img {
+  margin: 15px 0;
+}
+
+.trainer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.trainer_container > article {
+  max-width: 300px;
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  margin: 20px 30px;
+}
+.trainer_container > article > img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.trainer_container > article > h3 {
+  margin: 7px 0 15px 0;
+}
+.trainer_container > article > p {
+  font-size: 9pt;
+  color: grey;
+}
+
+.icon_div {
+  margin-top: 15px;
+}
+
+.icon_div > i {
+  margin-right: 5px;
+}
+
+.contact {
+  display: flex;
+}
+
+.left_contact {
+  width: 50%;
+}
+
+.left_contact > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right_contact {
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact_overlay {
+  background-color: rgba(0, 0, 0, 0.726);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.contact_overlay > form {
+  background-color: white;
+  width: 80%;
+  padding: 40px 25px;
+  align-items: flex-start;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact_overlay > form > input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  margin: 1rem 0;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.contact_overlay > form textarea {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.name_email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.name_email > input {
+  width: 45%;
+  padding: 10px 20px;
+  outline: none;
+}
+
+.contact_overlay > form a {
+  padding: 1rem 2rem;
+  background-color: #ed563b;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav_container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .nav_container > ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+  .holder {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .prog {
+    flex-direction: column;
+
+    text-align: center;
+    border: 1px solid red;
+  }
+  .prog_icon {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .days_grid {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .left_contact {
+    width: 100%;
+  }
+
+  .name_email {
+    flex-direction: column;
+  }
+
+  .name_email > input {
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .right_contact {
+    width: 100%;
+  }
+}
